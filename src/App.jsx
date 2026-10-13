@@ -629,23 +629,15 @@ function Venue() {
 
 function Footer() {
   return (
-    <footer className="relative min-h-[48rem] overflow-hidden bg-deep-burgundy py-24 text-center text-ivory md:min-h-[52rem] md:py-32">
-      <img
-        src="/images/couple-transparent.png"
-        alt="Jayalekshmi & Al Ameen"
-        width="768"
-        height="1024"
-        className="pointer-events-none absolute bottom-[-5rem] left-1/2 z-0 max-h-[75%] w-auto max-w-[min(92vw,36rem)] -translate-x-1/2 object-contain object-bottom opacity-95 sm:max-w-[min(88vw,40rem)]"
-        style={{ color: "transparent" }}
-      />
-      <div className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-t from-deep-burgundy/15 via-deep-burgundy/45 to-deep-burgundy/90"></div>
+    <footer className="relative overflow-hidden bg-deep-burgundy text-center text-ivory">
+      {/* Floral corners */}
       <img
         src="/images/floral-corner.png"
         alt=""
         aria-hidden="true"
         width="420"
         height="420"
-        className="blend-floral pointer-events-none absolute -left-6 -top-6 w-40 opacity-70 sm:w-56"
+        className="blend-floral pointer-events-none absolute -left-6 -top-6 z-10 w-40 opacity-70 sm:w-56"
         style={{ color: "transparent" }}
       />
       <img
@@ -654,20 +646,40 @@ function Footer() {
         aria-hidden="true"
         width="420"
         height="420"
-        className="blend-floral pointer-events-none absolute -bottom-6 -right-6 w-40 -scale-x-100 -scale-y-100 opacity-70 sm:w-56"
+        className="blend-floral pointer-events-none absolute -bottom-6 -right-6 z-10 w-40 -scale-x-100 -scale-y-100 opacity-70 sm:w-56"
         style={{ color: "transparent" }}
       />
-      <div className="relative z-10 mx-auto max-w-2xl px-6">
+
+      {/* Top text section */}
+      <div className="relative z-10 mx-auto max-w-2xl px-6 pt-16 pb-8">
         <Reveal>
-          <p className="mt-8 text-pretty text-sm leading-relaxed text-ivory/60">
+          <p className="text-pretty text-sm leading-relaxed text-ivory/60">
             Your presence, prayers, and blessings are the greatest gift as we begin our new journey together.
           </p>
-          <h2 className="mt-8 flex flex-col items-center font-serif font-light text-champagne">
+          <h2 className="mt-6 flex flex-col items-center font-serif font-light text-champagne">
             <span className="text-5xl sm:text-6xl">{WEDDING_DATA.bride.name}</span>
             <span className="my-1 text-3xl italic text-gold sm:text-4xl">&amp;</span>
             <span className="text-4xl sm:text-5xl">{WEDDING_DATA.groom.name}</span>
           </h2>
-          <p className="mt-6 font-sans text-xs uppercase tracking-[0.4em] text-ivory/70">
+        </Reveal>
+      </div>
+
+      {/* Couple image */}
+      <div className="relative w-full">
+        <img
+          src="/images/couple-transparent.png"
+          alt="Jayalekshmi & Al Ameen"
+          width="768"
+          height="1024"
+          className="pointer-events-none mx-auto block w-full max-w-[min(92vw,28rem)] object-contain sm:max-w-[min(88vw,32rem)]"
+          style={{ color: "transparent" }}
+        />
+      </div>
+
+      {/* Date at very bottom */}
+      <div className="relative z-10 bg-deep-burgundy pb-10 pt-4">
+        <Reveal>
+          <p className="font-sans text-xs uppercase tracking-[0.4em] text-ivory/70">
             {WEDDING_DATA.shortDateLabel}
           </p>
         </Reveal>
