@@ -629,7 +629,7 @@ function Venue() {
 
 function Footer() {
   return (
-    <footer className="relative min-h-[48rem] overflow-hidden bg-deep-burgundy py-24 text-center text-ivory md:min-h-[52rem] md:py-32">
+    <footer className="relative min-h-[48rem] overflow-hidden bg-deep-burgundy pt-10 pb-24 text-center text-ivory md:min-h-[52rem] md:pt-14 md:pb-32">
       <img
         src="/images/couple-transparent.png"
         alt="Jayalekshmi & Al Ameen"
@@ -659,8 +659,7 @@ function Footer() {
       />
       <div className="relative z-10 mx-auto max-w-2xl px-6">
         <Reveal>
-          <OrnamentDivider className="mt-6" />
-          <div className="mt-8 flex flex-col items-center">
+          <div className="mt-0 flex flex-col items-center">
             <h2 className="font-serif text-5xl font-light text-champagne sm:text-6xl">
               {WEDDING_DATA.bride.name}
             </h2>
