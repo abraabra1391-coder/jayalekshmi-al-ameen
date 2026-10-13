@@ -266,7 +266,7 @@ function Hero({ onOpenInvitation }) {
           </h1>
           <span className="my-2 font-serif text-4xl italic text-gold sm:text-5xl">&amp;</span>
           <h1 className="font-serif text-6xl font-light capitalize leading-none text-burgundy sm:text-7xl md:text-8xl">
-            {WEDDING_DATA.groom.fullName}
+            Al Ameen
           </h1>
         </div>
         <p className="mt-8 max-w-md text-pretty font-serif text-lg italic leading-relaxed text-foreground/80 sm:text-xl">
@@ -444,7 +444,7 @@ function BlessedUnion() {
           <Reveal delay={300}>
             <UnionCard
               role="The Groom"
-              name={WEDDING_DATA.groom.fullName}
+              name={`${WEDDING_DATA.groom.fullName} .A`}
               relation={`Son of ${WEDDING_DATA.groom.father} & ${WEDDING_DATA.groom.mother}`}
               image={WEDDING_DATA.groom.image}
               alt={WEDDING_DATA.groom.fullName}
@@ -635,7 +635,7 @@ function Footer() {
         alt="Jayalekshmi & Al Ameen"
         width="768"
         height="1024"
-        className="pointer-events-none absolute bottom-0 left-1/2 z-0 max-h-[70%] w-auto max-w-[min(92vw,36rem)] -translate-x-1/2 object-contain object-bottom opacity-95 sm:max-w-[min(88vw,40rem)]"
+        className="pointer-events-none absolute bottom-[-5rem] left-1/2 z-0 max-h-[75%] w-auto max-w-[min(92vw,36rem)] -translate-x-1/2 object-contain object-bottom opacity-95 sm:max-w-[min(88vw,40rem)]"
         style={{ color: "transparent" }}
       />
       <div className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-t from-deep-burgundy/15 via-deep-burgundy/45 to-deep-burgundy/90"></div>
