@@ -83,8 +83,8 @@ const WEDDING_DATA = {
   venue: {
     name: "TG Auditorium",
     address: "TG Auditorium",
-    city: "Puthuvettinmele, Perukavu, Trivandrum",
-    maps: "https://www.google.com/maps/search/?api=1&query=TG+Auditorium+Puthuvettinmele+Perukavu+Trivandrum"
+    city: "Puthuveettumele, Perukavu, Trivandrum",
+    maps: "https://www.google.com/maps/search/?api=1&query=TG+Auditorium+Puthuveettumele+Perukavu+Trivandrum"
   }
 };
 
@@ -614,7 +614,7 @@ function Venue() {
             <div className="relative border border-gold/30 p-2">
               <iframe
                 title={`Map showing ${venue.name}, ${venue.city}`}
-                src="https://www.google.com/maps?q=TG+Auditorium+Puthuvettinmele+Perukavu+Trivandrum&z=16&output=embed"
+                src="https://www.google.com/maps?q=TG+Auditorium+Puthuveettumele+Perukavu+Trivandrum&z=16&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="h-72 w-full grayscale-[0.2] sm:h-96"
