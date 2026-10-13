@@ -660,11 +660,15 @@ function Footer() {
       <div className="relative z-10 mx-auto max-w-2xl px-6">
         <Reveal>
           <OrnamentDivider className="mt-6" />
-          <h2 className="mt-8 font-serif text-5xl font-light text-champagne sm:text-6xl">
-            {WEDDING_DATA.bride.name}
-            <span className="mx-3 italic text-gold">&amp;</span>
-            {WEDDING_DATA.groom.name}
-          </h2>
+          <div className="mt-8 flex flex-col items-center">
+            <h2 className="font-serif text-5xl font-light text-champagne sm:text-6xl">
+              {WEDDING_DATA.bride.name}
+            </h2>
+            <span className="my-2 font-serif text-3xl italic text-gold sm:text-4xl">&amp;</span>
+            <h2 className="font-serif text-5xl font-light text-champagne sm:text-6xl">
+              {WEDDING_DATA.groom.name}
+            </h2>
+          </div>
           <p className="mt-6 font-sans text-xs uppercase tracking-[0.4em] text-ivory/70">
             {WEDDING_DATA.shortDateLabel}
           </p>
