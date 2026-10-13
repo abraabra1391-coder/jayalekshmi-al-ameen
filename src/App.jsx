@@ -659,17 +659,16 @@ function Footer() {
       />
       <div className="relative z-10 mx-auto max-w-2xl px-6">
         <Reveal>
-          <OrnamentDivider className="mt-6" />
-          <h2 className="mt-8 font-serif text-5xl font-light text-champagne sm:text-6xl">
-            {WEDDING_DATA.bride.name}
-            <span className="mx-3 italic text-gold">&amp;</span>
-            {WEDDING_DATA.groom.name}
+          <p className="mt-8 text-pretty text-sm leading-relaxed text-ivory/60">
+            Your presence, prayers, and blessings are the greatest gift as we begin our new journey together.
+          </p>
+          <h2 className="mt-8 flex flex-col items-center font-serif font-light text-champagne">
+            <span className="text-5xl sm:text-6xl">{WEDDING_DATA.bride.name}</span>
+            <span className="my-1 text-3xl italic text-gold sm:text-4xl">&amp;</span>
+            <span className="text-4xl sm:text-5xl">{WEDDING_DATA.groom.name}</span>
           </h2>
           <p className="mt-6 font-sans text-xs uppercase tracking-[0.4em] text-ivory/70">
             {WEDDING_DATA.shortDateLabel}
-          </p>
-          <p className="mt-10 text-pretty text-sm leading-relaxed text-ivory/60">
-            Your presence, prayers, and blessings are the greatest gift as we begin our new journey together.
           </p>
         </Reveal>
       </div>
